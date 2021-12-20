@@ -10,6 +10,8 @@ To call your custom Azure Function API instead of MS Graph API make the followin
 * MSGraph Resource URL: Set it to your Function API (e.g. `https://[azure-func-app].azurewebsites.net/api/SayHello?name=John`)
 * Scopes: Available scope defined in Azure AD App registration of the Azure Function App (e.g. `api://[Azure-AD-Function-App-Client-ID]/user_impersonation`)
 
+Additionally, if you need to generate a new signat Redirect URI Signature follow this [MSAL FAQ](https://github.com/AzureAD/microsoft-authentication-library-for-android/wiki/MSAL-FAQ#redirect-uri-issues).
+
 ## About the Sample
 
 The MSAL Android library gives your app the ability to begin using the [Microsoft identity platform](https://aka.ms/aaddev) by supporting [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) and [Microsoft Accounts](https://account.microsoft.com) in a converged experience using industry standard OAuth2 and OpenID Connect protocols.
